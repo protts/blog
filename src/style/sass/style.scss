@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import "~bulma/bulma.sass";
+
+$margin-footer: 80px;
+$footer-padding: 2rem 1.5rem;
+$tabs-border-bottom-color: transparent;
+$tabs-border-bottom-style: none;
+$tabs-border-bottom-width: 0;
+$tabs-link-padding: 0.5em 0.5em;
+
+.is-size-0 {
+    font-size: 4.1rem !important;
+}
+
+.tabs {
+    .social-tabs {
+        border-bottom-color: $tabs-border-bottom-color;
+        border-bottom-style: $tabs-border-bottom-style;
+        border-bottom-width: $tabs-border-bottom-width;
+        font-size: 1.1rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        li {
+            padding: $tabs-link-padding;
+
+            a {
+                border-bottom-color: $tabs-border-bottom-color;
+                border-bottom-style: $tabs-border-bottom-style;
+                border-bottom-width: $tabs-border-bottom-width;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    margin-top: $margin-footer;
+    padding: $footer-padding !important;
+
+    .tabs {
+        .footer-tabs {
+            border-bottom-color: $tabs-border-bottom-color;
+            border-bottom-style: $tabs-border-bottom-style;
+            border-bottom-width: $tabs-border-bottom-width;
+
+            li a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.footer-name {
+    &:hover {
+        text-decoration: underline;
+    }
+}
