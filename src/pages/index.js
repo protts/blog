@@ -1,19 +1,24 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import { FaLinkedin, FaTwitter, FaGithub, FaTelegramPlane, FaBitcoin, FaEthereum } from "react-icons/fa";
+import { graphql } from 'gatsby'
 
-import Layout from '../components/layout'
+import SEO from '../components/seo'
+import Main from '../components/main'
+import Header from '../components/header'
+import Footer from '../components/footer'
+import SocialIcons from '../components/small/social-icons'
 
 import '../style/sass/style.scss'
 
-const IndexPage = () => {
+const IndexPage = ({data}) => {
     return(
         <>
-            <Layout>
-                <div className="container">
+            <SEO title={data.site.siteMetadata.title} />
+            <Header>Zajmuje się SEO oraz kodowaniem. Piszę w Python i Javascript.</Header>
+            <Main>
+                <section className="container">
                     <div className="columns">
                         <div className="column is-half">
-                            <div className="content is-medium has-text-grey-dark">
+                            <div className="content is-medium has-text-black-bis">
                                 <p>
                                    Cześć. Mam na imie Paweł. Od zawsze interesowałem się technologią co w pewnym
                                    momencie przełożyło się na moją prace w obrębie IT. Od ponad 6 lat zajmuje się
@@ -23,23 +28,24 @@ const IndexPage = () => {
                         </div>
                         <div className="column is-half">
                             <div className="content is-medium">
-                                <div class="tabs is-right">
-                                    <ul className="social-tabs">
-                                        <li><a href="https://twitter.com/prott_"><FaTwitter color="#00acee" /></a></li>
-                                        <li><a href="https://www.linkedin.com/in/pawe%C5%82-kot-b7101478/"><FaLinkedin color="#0e76a8" /></a></li>
-                                        <li><a href="https://github.com/protts"><FaGithub color="211f1f" /></a></li>
-                                        <li><a href="mailto:kontakt@pawelkot.com.pl"><FaTelegramPlane color="#0088cc" /></a></li>
-                                        <li><Link><FaBitcoin color="#f2a900"/></Link></li>
-                                        <li><Link><FaEthereum color="#3c3c3d"/></Link></li>
-                                    </ul>
-                                </div>
+                                <SocialIcons />
                             </div>
                         </div>
                     </div>
-                </div>
-            </Layout>
+                </section>
+            </Main>
+            <Footer />
         </>
     )
 }
 
 export default IndexPage;
+
+export const query = graphql` {
+    site {
+        siteMetadata {
+            title
+        }
+    }
+
+}`;
