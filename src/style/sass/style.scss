@@ -8,6 +8,16 @@ $tabs-border-bottom-style: none;
 $tabs-border-bottom-width: 0;
 $tabs-link-padding: 0.5em 0.5em;
 
+a {
+    transition-duration: .3s;
+
+    &:hover {
+        color: $cyan;
+        transition-duration: .3s;
+        text-decoration: underline;
+    }
+}
+
 .is-size-0 {
     font-size: 4.1rem !important;
 }
@@ -17,7 +27,7 @@ $tabs-link-padding: 0.5em 0.5em;
         border-bottom-color: $tabs-border-bottom-color;
         border-bottom-style: $tabs-border-bottom-style;
         border-bottom-width: $tabs-border-bottom-width;
-        font-size: 1.1rem;
+        font-size: 1.12rem;
         position: absolute;
         bottom: 0;
         right: 0;
