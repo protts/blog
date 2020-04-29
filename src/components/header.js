@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 
 import '../style/sass/style.scss'
 
-const Header = ({slogan}) => {
+const Header = ({children}) => {
     return(
         <header>
             <section class="hero is-medium">
                 <div class="hero-body">
                     <div class="container">
                         <h1 class="title is-size-0 has-text-black-bis">
-                            {slogan}
+                            {children}
                         </h1>
                     </div>
                 </div>
@@ -20,11 +20,11 @@ const Header = ({slogan}) => {
 }
 
 Header.defaultProps = {
-    slogan: 'Add your header'
+    children: 'Add your header'
 }
 
 Header.propTypes = {
-    slogan: PropTypes.string,
+    children: PropTypes.string,
 }
 
 export default Header;
