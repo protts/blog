@@ -9,11 +9,12 @@ const Footer = () => {
             <div class="content has-text-centered">
                 <div class="tabs is-centered">
                     <ul className="footer-tabs">
-                        <li><Link>O mnie</Link></li>
-                        <li><Link>Usługi</Link></li>
-                        <li><Link>Blog</Link></li>
-                        <li><Link>Kontakt</Link></li>
-                        <li><Link>Staffmedia</Link></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/o-mnie/">O mnie</Link></li>
+                        <li><Link to="/uslugi/">Usługi</Link></li>
+                        <li><Link to="/blog/">Blog</Link></li>
+                        <li><Link to="/kontakt/">Kontakt</Link></li>
+                        <li><Link to="/portfolio/">Portfolio</Link></li>
                     </ul>
                 </div>
                 <p className="has-text-grey">
