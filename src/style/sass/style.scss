@@ -18,8 +18,20 @@ a {
     }
 }
 
+p {
+    margin-bottom: 15px;
+}
+
 .is-size-0 {
     font-size: 4.1rem !important;
+}
+
+.services-title {
+    margin-bottom: 15px !important;
+    font-size: 1.25rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    font-weight: 700 !important;
 }
 
 .tabs {
