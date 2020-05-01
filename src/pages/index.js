@@ -5,14 +5,16 @@ import SEO from '../components/seo'
 import Main from '../components/main'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import SocialIcons from '../components/small/social-icons'
+import SocialIcons from '../components/social-icons'
 
 import '../style/sass/style.scss'
 
 const IndexPage = ({data}) => {
     return(
         <>
-            <SEO title={data.site.siteMetadata.title} />
+            <SEO title={data.site.siteMetadata.titles}
+                 description={data.site.siteMetadata.description}
+                 urlPath={data.site.siteMetadata.urlPath} />
             <Header>Zajmuje się SEO oraz kodowaniem. Piszę w Python i Javascript.</Header>
             <Main>
                 <section className="container">
@@ -45,6 +47,8 @@ export const query = graphql` {
     site {
         siteMetadata {
             title
+            description
+            urlPath
         }
     }
 
