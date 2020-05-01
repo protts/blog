@@ -10,8 +10,8 @@ const Footer = () => {
                 <div class="tabs is-centered">
                     <ul className="footer-tabs">
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/o-mnie/">O mnie</Link></li>
-                        <li><Link to="/uslugi/">Usługi</Link></li>
+                        <li><Link to="/about/">O mnie</Link></li>
+                        <li><Link to="/service/">Usługi</Link></li>
                         <li><Link to="/blog/">Blog</Link></li>
                         <li><Link to="/kontakt/">Kontakt</Link></li>
                         <li><Link to="/portfolio/">Portfolio</Link></li>
