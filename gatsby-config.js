@@ -8,15 +8,40 @@ module.exports = {
     siteUrl: `https://pawelkot.com.pl`,
     urlPath: ``,
 
-    title_contact: `Kontakt ${page}`,
-    desc_title: `Najszybciej skontaktujesz się ze mną przez maila lub twittera.`,
-    urlPath: `/kontakt/`,
-
     title_404: `404 ${page}`,
     desc_404: `Strony nie znaleziono...`,
-    urlPath: `/404/`,
+    urlPath_404: `/404/`,
+
+    title_contact: `Kontakt ${page}`,
+    desc_contact: `Najszybciej skontaktujesz się ze mną przez maila lub twittera.`,
+    urlPath_contact: `/kontakt/`,
+
+    title_about: `O mnie ${page}`,
+    desc_about: `Pisze kod w pythonie oraz JavaScripte. Zajmuje się SEO oraz audytami SEO.`,
+    urlPath_about: `/about/`,
+
+    title_services: `Usługi SEO / Web Development ${page}`,
+    desc_services: `Usługi: programowanie - pozycjonowanie seo - optymalizacja stron - google ads.`,
+    urlPath_services: '/uslugi/',
   },
   plugins: [
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        baseUrl: `pawelkot.com.pl`,
+        protocol: `https`,
+        hostingWPCOM: false,
+        useACF: false,
+        verboseOutput: true,
+        includedRoutes: [
+          "**/categories",
+          "**/posts",
+          "**/media",
+          "**/tags",
+          "**/users",
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
