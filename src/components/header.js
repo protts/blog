@@ -6,10 +6,10 @@ import '../style/sass/style.scss'
 const Header = ({children}) => {
     return(
         <header>
-            <section class="hero is-medium">
-                <div class="hero-body">
-                    <div class="container">
-                        <h1 class="title is-size-0 has-text-black-bis">
+            <section className="hero is-medium">
+                <div className="hero-body">
+                    <div className="container">
+                        <h1 className="title is-size-0 has-text-black-bis">
                             {children}
                         </h1>
                     </div>

@@ -19,9 +19,9 @@ const Contact = ({data}) => {
                         <div className="column is-half">
                             <div className="content is-medium has-text-black-bis">
                                 <p>Odpowiadam na wszystkie wiadomości, chyba że to spam lub scam.</p>
-                                <p>Kontakt: kontakt@pawelkot.com.pl</p>
-                                <p>Twitter: @prott_</p>
-                                <p>LinkedId: Paweł Kot</p>
+                                <p><b>Kontakt:</b> <a href="mailto:kontakt@pawelkot.com.pl">kontakt@pawelkot.com.pl</a></p>
+                                <p><b>Twitter:</b> @prott_</p>
+                                <p><b>LinkedId:</b> Paweł Kot</p>
                             </div>
                         </div>
                         <div className="column is-half">

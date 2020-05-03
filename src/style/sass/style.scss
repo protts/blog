@@ -7,6 +7,8 @@ $tabs-border-bottom-color: transparent;
 $tabs-border-bottom-style: none;
 $tabs-border-bottom-width: 0;
 $tabs-link-padding: 0.5em 0.5em;
+$bg-white: #ffff;
+$txt-color: hsl(0, 0%, 7%);
 
 a {
     transition-duration: .3s;
@@ -56,6 +58,70 @@ p {
                     opacity: 0.8;
                 }
             }
+        }
+    }
+}
+
+.navbar-blog {
+    position: relative;
+    background: $bg-white;
+    width: 100%;
+
+    .navbar-body {
+        border-bottom: 1px solid hsl(0, 0%, 86%);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-grow: 3;
+        justify-content: space-between;
+        align-items: flex-end;
+        align-content: center;
+        padding: 15px 0;
+
+        .navbar-arrow-left {
+            width: 33%;
+        }
+
+        .navbar-arrow-right {
+            width: 33%;
+        }
+
+        .navbar-blog-brad {
+            width: 33%;
+        }
+    }
+}
+
+.blog-name {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    color: $txt-color;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.arrow-fix {
+    position: relative;
+    top: 4px;
+    color: $txt-color;
+}
+
+.post-list {
+    max-width: 830px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    .category-title {
+        h3 {
+            display: inline-block;
+            margin: 50px 0;
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: $txt-color;
         }
     }
 }

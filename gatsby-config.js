@@ -23,6 +23,10 @@ module.exports = {
     title_services: `Usługi SEO / Web Development ${page}`,
     desc_services: `Usługi: programowanie - pozycjonowanie seo - optymalizacja stron - google ads.`,
     urlPath_services: '/uslugi/',
+
+    title_blog: `Blog ${page}`,
+    desc_blog: `Blog o: Python, JavaScript, SEO i SEM.`,
+    urlPath_blog: `/blog/`,
   },
   plugins: [
     {

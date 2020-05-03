@@ -15,7 +15,7 @@ const About = ({data}) => {
             <SEO title={data.site.siteMetadata.title_about}
                  description={data.site.siteMetadata.desc_about}
                  urlPath={data.site.siteMetadata.urlPath_about} />
-            <Header>Zajmuje sie SEO i pisze kod w Python oraz JS.</Header>
+            <Header>Zajmuje sie SEO/SEM i pisze kod w Python oraz JavaScript.</Header>
             <Main>
                 <section className="container">
                     <div className="columns">

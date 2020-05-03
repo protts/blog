@@ -5,9 +5,9 @@ const Footer = () => {
     const date = new Date().getFullYear()
 
     return(
-        <footer class="footer">
-            <div class="content has-text-centered">
-                <div class="tabs is-centered">
+        <footer className="footer">
+            <div className="content has-text-centered">
+                <div className="tabs is-centered">
                     <ul className="footer-tabs">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about/">O mnie</Link></li>

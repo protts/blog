@@ -52,6 +52,7 @@ const Services = ({data}) => {
                                     Zajmuje się planowaniem, ustawianiem oraz optymalizacją kampani Google Ads.
                                     Tworzyłem kampanie Search, Display, YouTube, Remarketingowe.
                                 </p>
+                                <p><b>Kontakt:</b> <a href="mailto:kontakt@pawelkot.com.pl">kontakt@pawelkot.com.pl</a></p>
                             </div>
                         </div>
                         <div className="column is-half">
