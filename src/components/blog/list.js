@@ -5,11 +5,15 @@ import '../../style/sass/style.scss'
 
 const PostList = ({data}) => {
     return(
-        <section className="post-list">
+        <section>
             <div className="category-title">
                 <h3>Tytuł kategorii</h3>
             </div>
-            <article>Artykuł do wyspisania.</article>
+            <article>
+                <span className="date"><a href="#">2020-05-05</a></span>
+                <span className="post-title"><a href="#">Tytuł wpisu jakiegoś fajnego.</a></span>
+                <span className="category"><a href="#">Category</a></span>
+            </article>
             <article>Artykuł do wyspisania.</article>
             <article>Artykuł do wyspisania.</article>
             <article>Artykuł do wyspisania.</article>

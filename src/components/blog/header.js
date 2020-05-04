@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { FaLongArrowAltLeft } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 
 import '../../style/sass/style.scss'
 
@@ -11,7 +11,7 @@ const Header = () => {
                 <div className="container">
                     <div className="navbar-body">
                         <div className="navbar-arrow-left">
-                            <a href="/"><FaLongArrowAltLeft className="arrow-fix" /></a>
+                            <a href="/"><FaArrowLeft className="arrow-fix" /></a>
                         </div>
                         <div className="navbar-blog-brand">
                             <a className="blog-name" href="/blog/">Paweł Kot Blog</a>

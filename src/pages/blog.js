@@ -16,8 +16,10 @@ const Blog = ({data}) => {
             <Header />
             <Main>
                 <div className="container">
-                    <PostList />
-                    <PostList />
+                    <div className="post-list">
+                        <PostList />
+                        <PostList />
+                    </div>
                 </div>
             </Main>
             <Footer />

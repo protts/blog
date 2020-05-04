@@ -9,6 +9,7 @@ $tabs-border-bottom-width: 0;
 $tabs-link-padding: 0.5em 0.5em;
 $bg-white: #ffff;
 $txt-color: hsl(0, 0%, 7%);
+$cat-color: hsl(217, 71%, 53%);
 
 a {
     transition-duration: .3s;
@@ -111,18 +112,24 @@ p {
 }
 
 .post-list {
-    max-width: 830px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 20px;
 
     .category-title {
         h3 {
             display: inline-block;
-            margin: 50px 0;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             font-weight: 900;
-            color: $txt-color;
+            color: $cat-color;
+            margin-block-start: 1.5em;
+            margin-block-end: 1.5em;
+            letter-spacing: 1px;
         }
+    }
+
+    article {
+        padding: 15px 0;
     }
 }
 
