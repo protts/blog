@@ -1,29 +1,28 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 import '../../style/sass/style.scss'
 
-const PostList = ({data}) => {
+const PostList = ({category, post}) => {
     return(
         <section>
             <div className="category-title">
-                <h3>Tytuł kategorii</h3>
+                <h3>{category.name}</h3>
             </div>
-            <article>
-                <span className="date"><a href="#">2020-05-05</a></span>
-                <span className="post-title"><a href="#">Tytuł wpisu jakiegoś fajnego.</a></span>
-                <span className="category"><a href="#">Category</a></span>
-            </article>
-            <article>Artykuł do wyspisania.</article>
-            <article>Artykuł do wyspisania.</article>
-            <article>Artykuł do wyspisania.</article>
-            <article>Artykuł do wyspisania.</article>
+                {post.edges.map(({node}) => (
+                    <article>
+                    <span className="date">2020-05-05</span><span className="date-dash">-</span>
+                    <span className="post"><a className="post-title" href="#">{node.title}</a></span>
+                    <span className="category"><a className="date-date" href="#">Category</a></span>
+                    </article>
+                ))}
         </section>
     )
 }
 
 PostList.propTypes = {
-    data: PropTypes.arrayOf(PropTypes.object),
+    category: PropTypes.string,
+    post: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default PostList;

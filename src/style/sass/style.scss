@@ -9,7 +9,9 @@ $tabs-border-bottom-width: 0;
 $tabs-link-padding: 0.5em 0.5em;
 $bg-white: #ffff;
 $txt-color: hsl(0, 0%, 7%);
-$cat-color: hsl(217, 71%, 53%);
+$cat-color: hsl(171, 100%, 41%);
+$tite-color: hsl(0, 0%, 21%);
+$meta-color: #707080;
 
 a {
     transition-duration: .3s;
@@ -119,7 +121,7 @@ p {
     .category-title {
         h3 {
             display: inline-block;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 900;
             color: $cat-color;
             margin-block-start: 1.5em;
@@ -130,6 +132,39 @@ p {
 
     article {
         padding: 15px 0;
+
+        .date {
+            font-weight: 600;
+            font-size: .8em;
+            letter-spacing: 1px;
+            color: $meta-color;
+            text-transform: uppercase;
+        }
+
+        .category {
+            margin-left: 10px;
+        }
+
+        .post {
+            .post-title {
+                font-weight: 500;
+                font-size: 1.1rem;
+                letter-spacing: 1px;
+                color: $tite-color;
+            }
+        }
+
+        .date-date {
+            font-weight: 600;
+            font-size: .8em;
+            letter-spacing: 1px;
+            color: $meta-color;
+        }
+
+        .date-dash {
+            padding: 0 10px;
+            color: $cat-color;
+        }
     }
 }
 

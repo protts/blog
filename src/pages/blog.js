@@ -17,8 +17,9 @@ const Blog = ({data}) => {
             <Main>
                 <div className="container">
                     <div className="post-list">
-                        <PostList />
-                        <PostList />
+                        {data.allWordpressCategory.edges.map(({node}) => (
+                            <PostList category={node} post={data.allWordpressPost} />
+                        ))}
                     </div>
                 </div>
             </Main>
@@ -35,6 +36,14 @@ export const guery = graphql` {
             title_blog
             desc_blog
             urlPath_blog
+        }
+    }
+    allWordpressCategory {
+        edges {
+            node {
+                id
+                name
+            }
         }
     }
     allWordpressPost {
