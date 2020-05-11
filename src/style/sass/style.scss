@@ -25,6 +25,7 @@ a {
 
 p {
     margin-bottom: 15px;
+    font-size: 1.1rem;
 }
 
 .is-size-0 {
@@ -148,7 +149,7 @@ p {
         .post {
             .post-title {
                 font-weight: 500;
-                font-size: 1.1rem;
+                font-size: 1rem;
                 letter-spacing: 1px;
                 color: $tite-color;
             }
@@ -162,10 +163,17 @@ p {
         }
 
         .date-dash {
-            padding: 0 10px;
+            padding: 0 8px;
             color: $cat-color;
         }
     }
+}
+
+.post-content {
+    display: block;
+    max-width: 44rem;
+    margin: 8rem auto 0 auto;
+    padding: 0 30px;
 }
 
 .footer {

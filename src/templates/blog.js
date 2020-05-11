@@ -17,9 +17,7 @@ const Blog = ({data}) => {
             <Main>
                 <div className="container">
                     <div className="post-list">
-                        {data.allWordpressCategory.edges.map(({node}) => (
-                            <PostList category={node} post={data.allWordpressPost} />
-                        ))}
+                        DUPA
                     </div>
                 </div>
             </Main>
@@ -30,28 +28,22 @@ const Blog = ({data}) => {
 
 export default Blog;
 
-export const guery = graphql` {
-    site {
-        siteMetadata {
-            title_blog
-            desc_blog
-            urlPath_blog
+export const query = graphql`
+    query {
+        site {
+            siteMetadata {
+                title_blog
+                desc_blog
+                urlPath_blog
+            }
         }
-    }
-    allWordpressCategory {
-        edges {
-            node {
-                id
-                name
+        allWordpressCategory {
+            edges {
+                node {
+                    id
+                    name
+                }
             }
         }
     }
-    allWordpressPost {
-        edges {
-            node {
-                id
-                title
-            }
-        }
-    }
-}`;
+`
