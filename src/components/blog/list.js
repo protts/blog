@@ -12,7 +12,7 @@ const PostList = ({data, title}) => {
                 {data.allWordpressPost.edges.map(({node}) => (
                     <article key={node.id}>
                         <span className="date">{node.date}</span><span className="date-dash">-</span>
-                        <span className="post"><a className="post-title" href={`${node.date}/${node.slug}/`}>
+                        <span className="post"><a className="post-title" href={`/${node.date}/${node.slug}/`}>
                             <span dangerouslySetInnerHTML={{ __html: node.title }} />
                         </a></span>
                         {node.categories.map((cat) => (

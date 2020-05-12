@@ -11,6 +11,10 @@ $bg-white: #ffff;
 $txt-color: hsl(0, 0%, 7%);
 $cat-color: hsl(171, 100%, 41%);
 $tite-color: hsl(0, 0%, 21%);
+$title-size: 3.5rem;
+$title-weight: 700;
+$title-line-height: 1.2;
+$subtitle-size: 1.8rem;
 $meta-color: #707080;
 
 a {
@@ -26,6 +30,7 @@ a {
 p {
     margin-bottom: 15px;
     font-size: 1.1rem;
+    color: $txt-color;
 }
 
 .is-size-0 {
@@ -174,11 +179,64 @@ p {
     max-width: 44rem;
     margin: 8rem auto 0 auto;
     padding: 0 30px;
+
+    .title {
+        color: hsl(0, 0%, 7%);
+        font-weight: $title-weight;
+        line-height: $title-line-height;
+        letter-spacing: 1px;
+    }
+
+    .is-1 {
+        font-size: $title-size;
+    }
+    
+    .subtitle {
+        font-style: italic;
+        margin-top: 0 !important;
+    }
+
+    .is-3 {
+        font-size: $subtitle-size;
+    }
+
+    .meta-post {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-bottom: 1.5rem;
+        border-top: 1px solid hsl(0, 0%, 86%);
+        border-bottom: 1px solid hsl(0, 0%, 86%);
+        padding: 20px 1px;
+
+        span {
+            font-weight: $title-weight;
+            text-transform: uppercase;
+            color: $tite-color;
+            letter-spacing: 1px;
+        }
+
+        .separator {
+            position: relative;
+            margin: 0 20px;
+
+            &::after {
+                content: '|';
+                position: absolute;
+                font-weight: 100;
+                color: hsl(0, 0%, 86%);
+            }
+        }
+    }
 }
 
 .footer {
     margin-top: $margin-footer;
     padding: $footer-padding !important;
+
+    .copy {
+        font-size: 1rem;
+    }
 
     .tabs {
         .footer-tabs {

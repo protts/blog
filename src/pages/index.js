@@ -12,7 +12,7 @@ import '../style/sass/style.scss'
 const IndexPage = ({data}) => {
     return(
         <>
-            <SEO title={data.site.siteMetadata.titles}
+            <SEO title={data.site.siteMetadata.title}
                  description={data.site.siteMetadata.description}
                  urlPath={data.site.siteMetadata.urlPath} />
             <Header>Zajmuje się SEO oraz kodowaniem. Piszę w Python i Javascript.</Header>

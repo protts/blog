@@ -17,7 +17,7 @@ const Footer = () => {
                         <li><Link to="/portfolio/">Portfolio</Link></li>
                     </ul>
                 </div>
-                <p className="has-text-grey">
+                <p className="copy has-text-grey">
                     © {date} <Link to="/" className="footer-name has-text-grey">Paweł Kot</Link>
                     - Wszelkie prawa zastrzeżone
                 </p>
