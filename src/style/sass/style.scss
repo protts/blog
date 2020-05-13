@@ -14,7 +14,7 @@ $tite-color: hsl(0, 0%, 21%);
 $title-size: 3.5rem;
 $title-weight: 700;
 $title-line-height: 1.2;
-$subtitle-size: 1.8rem;
+$subtitle-size: 1.7rem;
 $meta-color: #707080;
 
 a {
@@ -75,6 +75,7 @@ p {
     position: relative;
     background: $bg-white;
     width: 100%;
+    padding: 0 30px;
 
     .navbar-body {
         border-bottom: 1px solid hsl(0, 0%, 86%);
@@ -88,15 +89,15 @@ p {
         padding: 15px 0;
 
         .navbar-arrow-left {
-            width: 33%;
+            width: 20%;
         }
 
         .navbar-arrow-right {
-            width: 33%;
+            width: 20%;
         }
 
         .navbar-blog-brad {
-            width: 33%;
+            width: 60%;
         }
     }
 }
@@ -185,6 +186,7 @@ p {
         font-weight: $title-weight;
         line-height: $title-line-height;
         letter-spacing: 1px;
+        margin: 0;
     }
 
     .is-1 {
@@ -193,18 +195,20 @@ p {
     
     .subtitle {
         font-style: italic;
-        margin-top: 0 !important;
-    }
-
-    .is-3 {
-        font-size: $subtitle-size !important;
+        margin: 0;
+        
+        p {
+            font-size: $subtitle-size;
+            color: $meta-color;
+            margin: 2rem 0;
+        }
     }
 
     .meta-post {
         display: flex;
         flex-direction: row;
         justify-content: start;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
         border-top: 1px solid hsl(0, 0%, 86%);
         border-bottom: 1px solid hsl(0, 0%, 86%);
         padding: 20px 1px;
@@ -214,6 +218,11 @@ p {
             text-transform: uppercase;
             color: $tite-color;
             letter-spacing: 1px;
+        }
+
+        a {
+            padding-right: 10px;
+            color: $tite-color;
         }
 
         .separator {
@@ -226,6 +235,27 @@ p {
                 font-weight: 100;
                 color: hsl(0, 0%, 86%);
             }
+        }
+    }
+
+    .thumbnail {
+        margin-bottom: 2rem;
+
+        img {
+            border-radius: 3px;
+        }
+    }
+
+    .cnt {
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            letter-spacing: .5px;
+            margin: 1.1em 0;
+            font-size: 1.6em;
+        }
+
+        p {
+            letter-spacing: .5px;
         }
     }
 }
