@@ -25,6 +25,9 @@ const Content = ({data}) => {
                 <Thumbnail data={data} />
             </div>
             <div className="cnt" dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }} />
+            <div className="post-footer">
+                sdfsdf
+            </div>
         </div>
     )
 }

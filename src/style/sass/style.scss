@@ -16,6 +16,7 @@ $title-weight: 700;
 $title-line-height: 1.2;
 $subtitle-size: 1.7rem;
 $meta-color: #707080;
+$content-color: #444;
 
 a {
     transition-duration: .3s;
@@ -256,7 +257,19 @@ p {
 
         p {
             letter-spacing: .5px;
+            margin-bottom: 1.1em;
+            color: $content-color;
         }
+
+        p:first-of-type {
+            font-size: 1.6em;
+            color: $txt-color;
+        }
+    }
+
+    .post-footer {
+        border: 1px solid blue;
+
     }
 }
 
