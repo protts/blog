@@ -26,6 +26,14 @@ const IndexPage = ({data}) => {
                                    momencie przełożyło się na moją prace w obrębie IT. Od ponad 6 lat zajmuje się
                                    SEO. Od kilku lat tworzę też strony internetowe z wykorzystaniem React, Gatsby, Django i Flask.
                                 </p>
+                                <p>
+                                    Przede wszystkim usługi związane z tworzeniem stron internetowych, ale też
+                                    dalsze ich pozycjonowanie, optymalizowanie oraz reklamowanie w systemie Google Ads.
+                                </p>
+                                <p>
+                                    Po więcej informacji zapraszam do kontaktu mailowego lub za pomocą kanałów
+                                    społecznościowych.
+                                </p>
                             </div>
                         </div>
                         <div className="column is-half">

@@ -1,5 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+import { Link } from 'gatsby'
+
+import { FaLongArrowAltLeft } from "react-icons/fa";
 
 import Thumbnail from './thumbnail';
 
@@ -26,7 +29,14 @@ const Content = ({data}) => {
             </div>
             <div className="cnt" dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }} />
             <div className="post-footer">
-                sdfsdf
+                <p>
+                    Właśnie przeczytałeś artykuł pod tytułem <span dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }} />, 
+                    który został napisany w <span dangerouslySetInnerHTML={{ __html: data.wordpressPost.date}} />.
+                    Jest to jedent z artykułów, który znajdziesz w kategorii <span dangerouslySetInnerHTML={{ __html: data.wordpressPost.categories[0].name }} />.
+                    Jeśli masz ochotę to przeczytaj więcej z tej kategorii.
+                    Jeśli masz do mnie pytanie lub ofertę to pisz śmiało, odpisuję każdemu.
+                </p>
+                <Link to={`category/${data.wordpressPost.categories[0].slug}/`}><FaLongArrowAltLeft /> Więcej artykułów</Link>
             </div>
         </div>
     )

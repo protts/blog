@@ -1,5 +1,6 @@
 const path = require(`path`)
 const { slash } = require(`gatsby-core-utils`)
+const { paginate } = require('gatsby-awesome-pagination')
 
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -77,7 +78,7 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 
   const postTemplate = path.resolve(`./src/templates/post.js`)
-  result.data.allWordpressPost.edges.forEach(edge => {
+  result.data.allWordpressPost.edges.forEach((edge, index) => {
     createPage({
       path: `/${edge.node.date}/${edge.node.slug}/`,
       component: slash(postTemplate),

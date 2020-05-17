@@ -23,7 +23,8 @@ const NotFoundPage = ({data}) => {
                             <div className="content is-medium has-text-black-bis">
                                 <p>
                                     Trafiłeś tutaj ponieważ to czego szukasz nie istnieje na tej stronie.
-                                    Możesz spróbwać poczytać coś innego albo wrócić na <Link to='/'>stronę główną</Link>.
+                                    Nie wdrażałem specjalnie wyszukiwarki ponieważ masz ją u siebie: ctrl + f.
+                                    Możesz też wrócić na <Link to='/'>stronę główną</Link>.
                                 </p>
                             </div>
                         </div>

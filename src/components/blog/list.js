@@ -26,7 +26,7 @@ const PostList = ({data, title}) => {
 
 PostList.propTypes = {
     title: PropTypes.string,
-    data: PropTypes.arrayOf(PropTypes.object),
+    data: PropTypes.object,
 }
 
 export default PostList;

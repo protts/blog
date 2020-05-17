@@ -18,7 +18,13 @@ const Contact = ({data}) => {
                     <div className="columns">
                         <div className="column is-half">
                             <div className="content is-medium has-text-black-bis">
-                                <p>Odpowiadam na wszystkie wiadomości, chyba że to spam lub scam.</p>
+                                <p>
+                                    Staram się odpowiadać na wszystkie wiadomości najszybciej jak to możliwe.
+                                </p>
+                                <p>
+                                    Jeśli nie odpisuje po kilku godzinach to znaczy, że Twoje pytanie
+                                    lub zapytanie ofertowe zajmuje mi chwile czasu na odpowiedź.
+                                </p>
                                 <p><b>Kontakt:</b> <a href="mailto:kontakt@pawelkot.com.pl">kontakt@pawelkot.com.pl</a></p>
                                 <p><b>Twitter:</b> @prott_</p>
                                 <p><b>LinkedId:</b> Paweł Kot</p>

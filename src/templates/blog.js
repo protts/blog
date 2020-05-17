@@ -17,7 +17,14 @@ const Blog = ({data}) => {
             <Main>
                 <div className="container">
                     <div className="post-list">
-                        DUPA
+                        {data.allWordpressPost.edges.map(({node}) => (
+                            <>
+                                {node.categories.map((e) => (
+                                    <p>{e.name}</p>
+                                ))}
+                            </>
+
+                        ))}
                     </div>
                 </div>
             </Main>
@@ -42,6 +49,21 @@ export const query = graphql`
                 node {
                     id
                     name
+                }
+            }
+        }
+        allWordpressPost(sort: {fields: categories___name}) {
+            edges {
+                node {
+                    id
+                    slug
+                    title
+                    date(formatString: "Y/M/D")
+                    categories {
+                        id
+                        name
+                        slug
+                    }
                 }
             }
         }
