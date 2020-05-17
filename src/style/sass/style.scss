@@ -322,7 +322,7 @@ p {
 
         svg {
             position: relative;
-            top: 2px;
+            top: 3px;
         }
     }
 }
@@ -334,23 +334,30 @@ p {
     margin-top: $margin-footer;
     padding: 0 30px;
 
-    .item {
+    div {
         width: 50%;
-        padding: 30px 10px;
-        font-size: 1.7rem;
         text-align: center;
 
-        &:hover {
-            transition-duration: .3s;
-            text-decoration: none;
-            color: #718096;
-            background: hsl(0, 0%, 96%);
-        }
+        .item {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            padding: 30px 10px;
+            font-size: 1.7rem;
+            letter-spacing: .5px;
 
-        svg {
-            position: relative;
-            top: 5px;
-            margin: 0 5px;
+            &:hover {
+                transition-duration: .3s;
+                text-decoration: none;
+                color: #718096;
+                background: hsl(0, 0%, 96%);
+            }
+
+            svg {
+                position: relative;
+                top: 5px;
+                margin: 0 5px;
+            }
         }
     }
 }
