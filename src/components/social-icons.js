@@ -4,7 +4,7 @@ import { FaLinkedin, FaTwitter, FaGithub, FaTelegramPlane, FaBitcoin, FaEthereum
 
 const SocialIcons = () => {
     return(
-        <div class="tabs is-right">
+        <div className="tabs is-right">
             <ul className="social-tabs">
                 <li><a href="https://twitter.com/prott_" target="_blank" rel="noopener noreferrer"><FaTwitter color="#00acee" /></a></li>
                 <li><a href="https://www.linkedin.com/in/pawe%C5%82-kot-b7101478/" target="_blank" rel="noopener noreferrer"><FaLinkedin color="#0e76a8" /></a></li>

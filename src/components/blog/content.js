@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby'
 
-import { FaLongArrowAltLeft } from "react-icons/fa";
+import { BsArrowLeft } from "react-icons/bs";
 
 import Thumbnail from './thumbnail';
 
@@ -36,7 +36,7 @@ const Content = ({data}) => {
                     Jeśli masz ochotę to przeczytaj więcej z tej kategorii.
                     Jeśli masz do mnie pytanie lub ofertę to pisz śmiało, odpisuję każdemu.
                 </p>
-                <Link to={`category/${data.wordpressPost.categories[0].slug}/`}><FaLongArrowAltLeft /> Więcej artykułów</Link>
+                <Link to={`category/${data.wordpressPost.categories[0].slug}/`}><BsArrowLeft /> Więcej artykułów</Link>
             </div>
         </div>
     )
