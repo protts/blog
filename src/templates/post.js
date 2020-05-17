@@ -9,7 +9,6 @@ import Content from '../components/blog/content'
 import Pagination from '../components/blog/pagination'
 
 const Post = ({data, pageContext}) => {
-    console.log(pageContext)
     return(
         <>
             <SEO title={`${data.wordpressPost.title} | pawelkot.com.pl`}
@@ -19,7 +18,7 @@ const Post = ({data, pageContext}) => {
             <Main>
                 <div className="container">
                     <Content data={data} />
-                    <Pagination prv="TEXT" nxt="TXT" />
+                    <Pagination data={pageContext} />
                 </div>
             </Main>
             <Footer />

@@ -78,13 +78,16 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 
   const postTemplate = path.resolve(`./src/templates/post.js`)
-  result.data.allWordpressPost.edges.forEach((edge, index) => {
+  const posts = result.data.allWordpressPost.edges
+  posts.forEach((edge, index) => {
     createPage({
       path: `/${edge.node.date}/${edge.node.slug}/`,
       component: slash(postTemplate),
       context: {
         id: edge.node.id,
         slug: edge.node.slug,
+        prev: index === 0 ? null : posts[index - 1].node,
+        next: index === (posts.length - 1) ? null : posts[index + 1].node
       }
     })
   })
