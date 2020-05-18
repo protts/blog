@@ -1,11 +1,16 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { Link } from 'gatsby'
+
+import { BsArrowLeft } from "react-icons/bs";
 
 import SEO from '../components/seo'
 import Main from '../components/main'
 import Footer from '../components/footer'
 import Header from '../components/blog/header'
 import PostList from '../components/blog/list'
+
+import '../style/sass/style.scss'
 
 const Category = ({data}) => {
     return(
@@ -18,6 +23,14 @@ const Category = ({data}) => {
                 <div className="container">
                     <div className="post-list">
                        <PostList data={data} title={data.wordpressCategory.name} />
+                    </div>
+                    <div className="list-description">
+                        <p>
+                            Wszyskite artykuł z kategorii <span dangerouslySetInnerHTML={{ __html: data.wordpressCategory.name }} />.
+                            Możesz przejść do wszystkich artykułów na stronie głównej lub do konkretnej kategorii.
+                            Jeśli masz do mnie pytanie lub ofertę to pisz śmiało, odpisuję każdemu.
+                        </p>
+                        <Link to="/blog/"><BsArrowLeft /> Więcej artykułów</Link>
                     </div>
                 </div>
             </Main>

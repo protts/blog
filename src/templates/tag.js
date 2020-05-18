@@ -1,5 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { Link } from 'gatsby'
+
+import { BsArrowLeft } from "react-icons/bs";
 
 import SEO from '../components/seo'
 import Main from '../components/main'
@@ -19,6 +22,14 @@ const Tag = ({data}) => {
                     <div className="post-list">
                        <PostList data={data} title={data.wordpressTag.name} />
                     </div>
+                </div>
+                <div className="list-description">
+                    <p>
+                        Wszyskite artykuł z kategorii <span dangerouslySetInnerHTML={{ __html: data.wordpressTag.name }} />.
+                        Możesz przejść do wszystkich artykułów na stronie głównej lub do konkretnej kategorii.
+                        Jeśli masz do mnie pytanie lub ofertę to pisz śmiało, odpisuję każdemu.
+                    </p>
+                    <Link to="/blog/"><BsArrowLeft /> Więcej artykułów</Link>
                 </div>
             </Main>
             <Footer />

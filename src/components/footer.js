@@ -14,7 +14,7 @@ const Footer = () => {
                         <li><Link to="/service/">Usługi</Link></li>
                         <li><Link to="/blog/">Blog</Link></li>
                         <li><Link to="/kontakt/">Kontakt</Link></li>
-                        <li><Link to="/portfolio/">Portfolio</Link></li>
+                        <li><Link to="/category/portfolio/">Portfolio</Link></li>
                     </ul>
                 </div>
                 <p className="copy has-text-grey">

@@ -72,6 +72,14 @@ p {
     }
 }
 
+.header-blog {
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+}
+
+
 .navbar-blog {
     position: relative;
     background: $bg-white;
@@ -89,6 +97,35 @@ p {
         align-content: center;
         padding: 15px 0;
 
+        .blog-name {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            color: $txt-color;
+        
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .bread {
+            color: $meta-color;
+            font-weight: 500;
+        }
+
+        .sep {
+            color: $meta-color;
+            padding: 0 7px;
+            font-weight: 500;
+        }
+
+        .arrow-fix {
+            position: relative;
+            top: 4px;
+            color: $txt-color;
+        }
+
         .navbar-arrow-left {
             width: 20%;
         }
@@ -103,31 +140,13 @@ p {
     }
 }
 
-.blog-name {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 1.5px;
-    color: $txt-color;
-
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-.arrow-fix {
-    position: relative;
-    top: 4px;
-    color: $txt-color;
-}
-
 .container {
     min-height: 100%;
 }
 
 .post-list {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 5rem auto 0 auto;
     padding: 30px;
 
     .category-title {
@@ -183,7 +202,7 @@ p {
 .post-content {
     display: block;
     max-width: 44rem;
-    margin: 8rem auto 0 auto;
+    margin: 13rem auto 0 auto;
     padding: 0 10px;
 
     .title {
@@ -343,7 +362,7 @@ p {
             width: 100%;
             height: 100%;
             padding: 30px 10px;
-            font-size: 1.7rem;
+            font-size: 1.5rem;
             letter-spacing: .5px;
 
             &:hover {
@@ -359,6 +378,32 @@ p {
                 margin: 0 5px;
             }
         }
+    }
+}
+
+.list-description {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
+    letter-spacing: .5px;
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    a {
+        font-size: 1.1rem;
+    }
+
+    svg {
+        position: relative;
+        top: 3px;
+    }
+
+    span {
+        font-weight: 500;
     }
 }
 

@@ -33,7 +33,7 @@ const Content = ({data}) => {
                     Właśnie przeczytałeś artykuł pod tytułem <span dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }} />, 
                     który został napisany w <span dangerouslySetInnerHTML={{ __html: data.wordpressPost.date}} />.
                     Jest to jedent z artykułów, który znajdziesz w kategorii <span dangerouslySetInnerHTML={{ __html: data.wordpressPost.categories[0].name }} />.
-                    Jeśli masz ochotę to przeczytaj więcej z tej kategorii.
+                    Możesz przejść do wszystkich artykułów z tej kategorii lub na stronę główną.
                     Jeśli masz do mnie pytanie lub ofertę to pisz śmiało, odpisuję każdemu.
                 </p>
                 <Link to={`category/${data.wordpressPost.categories[0].slug}/`}><BsArrowLeft /> Więcej artykułów</Link>
