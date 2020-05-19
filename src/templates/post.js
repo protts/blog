@@ -11,25 +11,28 @@ import Pagination from '../components/blog/pagination'
 
 const Post = ({data, pageContext}) => {
     const [scroll, scrollState] = useState(window.scrollY)
-    const [css, cssStatus] = useState(0)
-    
-    const handleScroll = () => {
+    const [header, headerState] = useState(false)
+
+    const scrollHandle = () => {
         const position = window.pageYOffset
         const top = document.body.scrollTop
-
+        
         if(position === top) {
-            cssStatus(false)
+            headerState(false)
             scrollState(position)
         }
         else {
-            cssStatus(true)
+            headerState(true)
+            scrollState(position)
         }
+
     }
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll, {passive: true})
+        window.addEventListener('scroll', scrollHandle, {passive: true})
+
         return () => {
-            window.removeEventListener('scroll', handleScroll, {passive: true})
+            window.removeEventListener('scroll', scrollHandle, {passive: true})
         }
     }, [])
 
@@ -38,7 +41,7 @@ const Post = ({data, pageContext}) => {
             <SEO title={`${data.wordpressPost.title} | pawelkot.com.pl`}
                  description={data.wordpressPost.excerpt}
                  urlPath={`${data.wordpressPost.date}/${data.wordpressPost.slug}/`} og_type="article" />
-            <HeaderMin data={data} css={css} />
+            <HeaderMin data={data} header={header} />
             <Main>
                 <div className="container">
                     <Content data={data} />

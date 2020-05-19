@@ -17,14 +17,7 @@ const Blog = ({data}) => {
             <Main>
                 <div className="container">
                     <div className="post-list">
-                        {data.allWordpressPost.edges.map(({node}) => (
-                            <>
-                                {node.categories.map((e) => (
-                                    <p>{e.name}</p>
-                                ))}
-                            </>
-
-                        ))}
+                        ``
                     </div>
                 </div>
             </Main>

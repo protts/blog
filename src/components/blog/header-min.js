@@ -6,7 +6,7 @@ import { BsArrowLeft } from "react-icons/bs";
 
 import '../../style/sass/style.scss'
 
-const HeaderMin = ({data, css}) => {
+const HeaderMin = ({data, header}) => {
     return(
         <header className="header-blog">
             <nav className="navbar-blog">
@@ -16,11 +16,7 @@ const HeaderMin = ({data, css}) => {
                             <a href="/"><BsArrowLeft className="arrow-fix" /></a>
                         </div>
                         <div className="navbar-blog-brand">
-                            <Link className="blog-name" to="/blog/">
-                                {css ? "PKB" : "PKB1"}
-                            </Link>
-                            <span className="sep">/</span>
-                            <span className="bread" dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }} />
+                            {header ? <ExtendBrand data={data} /> : <BasicBrand /> }
                         </div>
                         <div className="navbar-arrow-right"></div>
                     </div>
@@ -35,3 +31,19 @@ HeaderMin.propTypes = {
 }
 
 export default HeaderMin;
+
+export const BasicBrand = () => {
+    return(
+        <Link className="blog-name" to="/blog/">Paweł Kot Blog</Link>
+    )
+}
+
+export const ExtendBrand = ({data}) => {
+    return(
+        <>
+            <Link className="blog-name" to="/blog/">PKB</Link>
+            <span className="sep">/</span>
+            <span className="bread" dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }} />
+        </>
+    )
+}
