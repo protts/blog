@@ -152,7 +152,7 @@ p {
     .category-title {
         h3 {
             display: inline-block;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: 900;
             color: $cat-color;
             margin-block-start: 1.5em;
@@ -179,7 +179,7 @@ p {
         .post {
             .post-title {
                 font-weight: 500;
-                font-size: 1rem;
+                font-size: 1.1rem;
                 letter-spacing: 1px;
                 color: $tite-color;
             }
@@ -434,4 +434,12 @@ p {
     &:hover {
         text-decoration: underline;
     }
+}
+
+@media only screen and (max-width: 769px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
 }

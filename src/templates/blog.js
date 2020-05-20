@@ -17,7 +17,7 @@ const Blog = ({data}) => {
             <Main>
                 <div className="container">
                     <div className="post-list">
-                        ``
+                        <PostList data={data} title="Wszystkie posty" />
                     </div>
                 </div>
             </Main>
@@ -45,7 +45,7 @@ export const query = graphql`
                 }
             }
         }
-        allWordpressPost(sort: {fields: categories___name}) {
+        allWordpressPost(sort: {fields: date, order: DESC}) {
             edges {
                 node {
                     id
