@@ -38,7 +38,7 @@ const Post = ({data, pageContext}) => {
 
     return(
         <>
-            <SEO title={`${data.wordpressPost.title} | pawelkot.com.pl`}
+            <SEO title={`${data.wordpressPost.title.replace("&#8211;", '-')} | pawelkot.com.pl`}
                  description={data.wordpressPost.excerpt}
                  urlPath={`${data.wordpressPost.date}/${data.wordpressPost.slug}/`} og_type="article" />
             <HeaderMin data={data} header={header} />

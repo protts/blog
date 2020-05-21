@@ -173,7 +173,7 @@ p {
         }
 
         .category {
-            margin-left: 10px;
+            margin-right: 10px;
         }
 
         .post {
@@ -182,6 +182,7 @@ p {
                 font-size: 1.1rem;
                 letter-spacing: 1px;
                 color: $tite-color;
+                margin-right: 10px;
             }
         }
 
@@ -190,6 +191,7 @@ p {
             font-size: .8em;
             letter-spacing: 1px;
             color: $meta-color;
+            text-transform: uppercase;
         }
 
         .date-dash {
@@ -437,9 +439,103 @@ p {
 }
 
 @media only screen and (max-width: 769px) {
+    .navbar-blog {
+        padding: 0;
+    }
 
+    .navbar-blog-brand {
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .hero-body {
+        padding: 5rem 0 3rem 0;
+
+        .is-size-0 {
+            font-size: 2.9rem !important;
+        }
+    }
+
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        .post-list {
+            .post {
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .post-content {
+            margin-top: 8rem;
+
+            header {
+                .is-1 {
+                    font-size: 2.9rem;
+                }
+            }
+
+            .cnt {
+                padding: 0;
+            }
+        }
+
+        .post-pagination {
+            flex-direction: column;
+
+            div {
+                width: 100%;
+            }
+        }
+
+        .tabs {
+            .social-tabs {
+                justify-content: center;
+                position: relative;
+                margin: 0;
+                margin-left: -30px !important;
+
+                li {
+                    padding: 0;
+
+                    a {
+                        padding: 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer-tabs {
+            margin-left: 0;
+            flex-direction: column;
+
+            li {
+
+                a {
+                    font-size: 1.2rem !important;
+                }
+            }
+        }
+    }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .navbar-blog-brand {
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow: ellipsis;
+    }
 
+    .hero-body {
+        padding: 5rem 0 !important;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+    }
 }

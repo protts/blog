@@ -26,7 +26,7 @@ const Category = ({data}) => {
                     </div>
                     <div className="list-description">
                         <p>
-                            Wszyskite artykuł z kategorii <span dangerouslySetInnerHTML={{ __html: data.wordpressCategory.name }} />.
+                            Wszystkie artykuły z kategorii <span dangerouslySetInnerHTML={{ __html: data.wordpressCategory.name }} />.
                             Możesz przejść do wszystkich artykułów na stronie głównej lub do konkretnej kategorii.
                             Jeśli masz do mnie pytanie lub ofertę to pisz śmiało, odpisuję każdemu.
                         </p>

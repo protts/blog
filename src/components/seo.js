@@ -22,6 +22,7 @@ const SEO = ({title, description, urlPath, og_type}) => {
     return(
         <Helmet>
             <title>{title}</title>
+            <meta name="viewport" content="width=device-width, user-scalable=no"></meta>
             <link rel="canonical" href={`${site.siteMetadata.siteUrl}${urlPath}`} />
             <meta name="description" content={description} />
             <meta name="keywords" content="Paweł Kot" />
