@@ -536,6 +536,20 @@ p {
     }
 
     .container {
-        padding: 0 1.5rem;
+        padding: 0 1.5rem !important;
+
+        .columns {
+            .is-half {
+                width: 80%;
+            }
+        }
+
+        .social-tabs {
+            margin-top: 0;
+            margin-left: 0;
+            bottom: -55px;
+            right: auto;
+            left: 0;
+        }
     }
 }
