@@ -29,7 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
             id
             slug
             title
-            date(formatString: "Y/M/D")
+            date(formatString: "Y/MM/DD")
           }
         }
       }

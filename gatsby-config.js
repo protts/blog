@@ -32,7 +32,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        baseUrl: `pawelkot.com.pl`,
+        baseUrl: `api.pawelkot.com.pl`,
         protocol: `https`,
         hostingWPCOM: false,
         useACF: false,

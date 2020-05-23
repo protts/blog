@@ -61,7 +61,7 @@ export const query = graphql`
                     id
                     slug
                     title
-                    date(formatString: "Y/M/D")
+                    date(formatString: "Y/MM/DD")
                     categories {
                         id
                         name

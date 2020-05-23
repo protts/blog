@@ -525,12 +525,12 @@ p {
     .footer {
         .footer-tabs {
             margin-left: 0;
-            flex-direction: column;
+            flex-direction: row;
 
             li {
 
                 a {
-                    font-size: 1.2rem !important;
+                    font-size: 1.1rem !important;
                 }
             }
         }
