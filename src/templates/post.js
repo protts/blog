@@ -10,7 +10,7 @@ import Pagination from '../components/blog/pagination'
 
 
 const Post = ({data, pageContext}) => {
-    const [scroll, scrollState] = useState(window.scrollY)
+    const [scroll, scrollState] = useState(false)
     const [header, headerState] = useState(false)
 
     const scrollHandle = () => {

@@ -461,6 +461,10 @@ p {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
 
+        .meta-post {
+            display: block;
+        }
+
         .post-list {
             .post {
                 a {
@@ -480,6 +484,15 @@ p {
 
             .cnt {
                 padding: 0;
+
+                p {
+                    a {
+                        display: block;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
             }
         }
 
