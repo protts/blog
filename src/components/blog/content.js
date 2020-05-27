@@ -30,13 +30,13 @@ const Content = ({data}) => {
             <div className="cnt" dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }} />
             <div className="post-footer">
                 <p>
-                    Właśnie przeczytałeś artykuł pod tytułem <span dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }} />, 
-                    który został napisany w <span dangerouslySetInnerHTML={{ __html: data.wordpressPost.date}} />.
-                    Jest to jedent z artykułów, który znajdziesz w kategorii <span dangerouslySetInnerHTML={{ __html: data.wordpressPost.categories[0].name }} />.
-                    Możesz przejść do wszystkich artykułów z tej kategorii lub na stronę główną.
-                    Jeśli masz do mnie pytanie lub ofertę to pisz śmiało, odpisuję każdemu.
+                    You just read the article titled: <span dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }} />, 
+                    which was written in <span dangerouslySetInnerHTML={{ __html: data.wordpressPost.date}} />.
+                    This is one of the articles that you will find in the category <span dangerouslySetInnerHTML={{ __html: data.wordpressPost.categories[0].name }} />.
+                    You can go to all articles in this category or to the main page.
+                    If you have a question or an offer for me, write boldly and reply to everyone.
                 </p>
-                <Link to={`category/${data.wordpressPost.categories[0].slug}/`}><BsArrowLeft /> Więcej artykułów</Link>
+                <Link to={`category/${data.wordpressPost.categories[0].slug}/`}><BsArrowLeft /> More articles</Link>
             </div>
         </div>
     )

@@ -15,16 +15,16 @@ const NotFoundPage = ({data}) => {
             <SEO title={data.site.siteMetadata.title_404}
                  description={data.site.siteMetadata.desc_404}
                  urlPath={data.site.siteMetadata.urlPath_404} />
-            <Header>Strona, której szukasz nie istnieje. Wróć na <Link to="/">stronę główną.</Link></Header>
+            <Header>The page you are looking for does not exist. Return to <Link to="/">main page.</Link></Header>
             <Main>
                 <section className="container">
                     <div className="columns">
                         <div className="column is-half">
                             <div className="content is-medium has-text-black-bis">
                                 <p>
-                                    Trafiłeś tutaj ponieważ to czego szukasz nie istnieje na tej stronie.
-                                    Nie wdrażałem specjalnie wyszukiwarki ponieważ masz ją u siebie: ctrl + f.
-                                    Możesz też wrócić na <Link to='/'>stronę główną</Link>.
+                                You came here because what you are looking for does not exist on this page.
+                                I didn't implement the search engine because you have it in your browser: ctrl + f.
+                                Return to <Link to='/'>main page</Link>.
                                 </p>
                             </div>
                         </div>

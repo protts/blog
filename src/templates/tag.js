@@ -25,11 +25,11 @@ const Tag = ({data}) => {
                 </div>
                 <div className="list-description">
                     <p>
-                        Wszystkie artykuły z kategorii <span dangerouslySetInnerHTML={{ __html: data.wordpressTag.name }} />.
-                        Możesz przejść do wszystkich artykułów na stronie głównej lub do konkretnej kategorii.
-                        Jeśli masz do mnie pytanie lub ofertę to pisz śmiało, odpisuję każdemu.
+                        All articles from the <span dangerouslySetInnerHTML={{ __html: data.wordpressTag.name }} /> tag.
+                        You can go to all articles on the main page or to a specific tag.
+                        If you have a question or an offer for me, write boldly and reply to everyone.
                     </p>
-                    <Link to="/blog/"><BsArrowLeft /> Więcej artykułów</Link>
+                    <Link to="/blog/"><BsArrowLeft /> More articles</Link>
                 </div>
             </Main>
             <Footer />

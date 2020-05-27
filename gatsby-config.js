@@ -3,29 +3,29 @@ const page = `| pawelkot.com.pl`
 module.exports = {
   siteMetadata: {
     title: `SEO & Python & JavaScript Developer ${page}`,
-    description: `Od ponad 6 lat zajmuje się SEO i SEM. Piszę również kod w Python oraz JavaScript -> React / Gatsby.`,
+    description: `I have been involved in SEO and SEM for over 6 years. I also write code in Python and JavaScript -> React / Gatsby.`,
     author: `@prott_`,
     siteUrl: `https://pawelkot.com.pl`,
     urlPath: ``,
 
     title_404: `404 ${page}`,
-    desc_404: `Strony nie znaleziono...`,
+    desc_404: `Page not found...`,
     urlPath_404: `/404/`,
 
-    title_contact: `Kontakt ${page}`,
-    desc_contact: `Najszybciej skontaktujesz się ze mną przez maila lub twittera.`,
+    title_contact: `Contact ${page}`,
+    desc_contact: `The quickest way to contact me is via email or twitter.`,
     urlPath_contact: `/kontakt/`,
 
-    title_about: `O mnie ${page}`,
-    desc_about: `Pisze kod w pythonie oraz JavaScripte. Zajmuje się SEO oraz audytami SEO.`,
+    title_about: `About me ${page}`,
+    desc_about: `I write code in python and JavaScript. He deals with SEO and SEO audits.`,
     urlPath_about: `/about/`,
 
-    title_services: `Usługi SEO / Web Development ${page}`,
-    desc_services: `Usługi: programowanie - pozycjonowanie seo - optymalizacja stron - google ads.`,
+    title_services: `SEO / Web Development Services ${page}`,
+    desc_services: `Services: programming - SEO positioning - website optimization - Google ads.`,
     urlPath_services: '/uslugi/',
 
     title_blog: `Blog ${page}`,
-    desc_blog: `Blog o: Python, JavaScript, SEO i SEM.`,
+    desc_blog: `Blog about: Python, JavaScript, SEO and SEM.`,
     urlPath_blog: `/blog/`,
   },
   plugins: [
@@ -84,6 +84,12 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `https-pawelkot-com-pl`
+      }
     },
   ],
 }

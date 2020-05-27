@@ -15,24 +15,20 @@ const IndexPage = ({data}) => {
             <SEO title={data.site.siteMetadata.title}
                  description={data.site.siteMetadata.description}
                  urlPath={data.site.siteMetadata.urlPath} />
-            <Header>Zajmuje się SEO oraz kodowaniem. Piszę w Python i Javascript.</Header>
+            <Header>I work as an SEO specialist. Also I write in Python and JavaScript.</Header>
             <Main>
                 <section className="container">
                     <div className="columns">
                         <div className="column is-half">
                             <div className="content is-medium has-text-black-bis">
                                 <p>
-                                   Cześć. Mam na imie Paweł. Od zawsze interesowałem się technologią co w pewnym
-                                   momencie przełożyło się na moją prace w obrębie IT. Od ponad 6 lat zajmuje się
-                                   SEO. Od kilku lat tworzę też strony internetowe z wykorzystaniem React, Gatsby, Django i Flask.
+                                    Hey. My name is Paul. I have always been interested in technology, which at some point translated into my work in IT. I have been involved in SEO for over 6 years. I have also been creating websites using React, Gatsby, Django and Flask for several years.
                                 </p>
                                 <p>
-                                    Przede wszystkim usługi związane z tworzeniem stron internetowych, ale też
-                                    dalsze ich pozycjonowanie, optymalizowanie oraz reklamowanie w systemie Google Ads.
+                                    First of all, services related to creating websites, but also their further positioning, optimization (SEO) and advertising in the Google Ads system.
                                 </p>
                                 <p>
-                                    Po więcej informacji zapraszam do kontaktu mailowego lub za pomocą kanałów
-                                    społecznościowych.
+                                    For more information, please contact me via email or through social channels.
                                 </p>
                             </div>
                         </div>

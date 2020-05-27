@@ -19,15 +19,15 @@ const Blog = ({data}) => {
             <Main>
                 <div className="container">
                     <div className="post-list">
-                        <PostList data={data} title="Wszystkie posty" />
+                        <PostList data={data} title="Recent posts" />
                     </div>
                     <div className="list-description">
                         <p>
-                            Zawodowo zajmuje się SEO oraz kodowaniem. Głównie Python oraz JavaScript.
-                            Jeśli masz do mnie pytanie w sprawie artykułu lub ofertę to pisz śmiało, odpisuję każdemu.
-                            Na blogu nie ma wyszukiwarki, nie chciało mi się tego pisać. Ale jest ctr + f.
+                            I work as an SEO specialist and write in Python and JavaScript. 
+                            If you have any questions, offers or comments for me, write boldly. 
+                            I reply to everyone. If you want to find an article, ctrl + f.
                         </p>
-                        <Link to="/kontakt/"><BsArrowLeft /> Kontakt ze mną</Link>
+                        <Link to="/kontakt/"><BsArrowLeft /> Contact with me</Link>
                     </div>
                 </div>
             </Main>

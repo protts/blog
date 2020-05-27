@@ -10,16 +10,16 @@ const Footer = () => {
                 <div className="tabs is-centered">
                     <ul className="footer-tabs">
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about/">O mnie</Link></li>
-                        <li><Link to="/service/">Usługi</Link></li>
+                        <li><Link to="/about/">About me</Link></li>
+                        <li><Link to="/service/">Services</Link></li>
                         <li><Link to="/blog/">Blog</Link></li>
-                        <li><Link to="/kontakt/">Kontakt</Link></li>
+                        <li><Link to="/kontakt/">Contact</Link></li>
                         <li><Link to="/category/portfolio/">Portfolio</Link></li>
                     </ul>
                 </div>
                 <p className="copy has-text-grey">
                     © {date} <Link to="/" className="footer-name has-text-grey">Paweł Kot</Link>
-                    - Wszelkie prawa zastrzeżone
+                    - All rights reserved
                 </p>
             </div>
         </footer>

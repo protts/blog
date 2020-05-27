@@ -7,6 +7,7 @@ import Footer from '../components/footer'
 import HeaderMin from '../components/blog/header-min.js'
 import Content from '../components/blog/content'
 import Pagination from '../components/blog/pagination'
+import DisqusComment from '../components/blog/disqus'
 
 
 const Post = ({data, pageContext}) => {
@@ -46,6 +47,7 @@ const Post = ({data, pageContext}) => {
                 <div className="container">
                     <Content data={data} />
                     <Pagination data={pageContext} />
+                    <DisqusComment data={data} />
                 </div>
             </Main>
             <Footer />
@@ -81,6 +83,11 @@ export const query = graphql`
                         }
                     }
                 }
+            }
+        }
+        site {
+            siteMetadata {
+              siteUrl
             }
         }
     }

@@ -12,20 +12,19 @@ const Contact = ({data}) => {
         <>
             <SEO title={data.site.siteMetadata.title_contact} 
                  description={data.site.siteMetadata.desc_contact} urlPath={data.site.siteMetadata.urlPath_contact} />
-            <Header>Najszybciej skontaktujesz się ze mną przez Email, Twitter lub LinkedIn.</Header>
+            <Header>You can contact me quickly via Email, Twitter or LinkedIn.</Header>
             <Main>
                 <section className="container">
                     <div className="columns">
                         <div className="column is-half">
                             <div className="content is-medium has-text-black-bis">
                                 <p>
-                                    Staram się odpowiadać na wszystkie wiadomości najszybciej jak to możliwe.
+                                    I try to reply to all messages as soon as possible.
                                 </p>
                                 <p>
-                                    Jeśli nie odpisuje po kilku godzinach to znaczy, że Twoje pytanie
-                                    lub zapytanie ofertowe zajmuje mi chwile czasu na odpowiedź.
+                                    If I do not reply after a few hours, it means that your question or inquiry takes me some time to answer.
                                 </p>
-                                <p><b>Kontakt:</b> <a href="mailto:kontakt@pawelkot.com.pl">kontakt@pawelkot.com.pl</a></p>
+                                <p><b>Email:</b> <a href="mailto:kontakt@pawelkot.com.pl">kontakt@pawelkot.com.pl</a></p>
                                 <p><b>Twitter:</b> @prott_</p>
                                 <p><b>LinkedId:</b> Paweł Kot</p>
                             </div>

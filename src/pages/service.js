@@ -15,7 +15,7 @@ const Services = ({data}) => {
             <SEO title={data.site.siteMetadata.title_services}
                  description={data.site.siteMetadata.desc_services}
                  urlPath={data.site.siteMetadata.urlPath_services} />
-            <Header>Możemy współpracować w obszarach SEO/SEM i Web Developmentu.</Header>
+            <Header>We can cooperate in the areas of SEO / SEM and Web Development.</Header>
             <Main>
                 <section className="container">
                     <div className="columns">
@@ -23,8 +23,7 @@ const Services = ({data}) => {
                             <div className="content is-medium has-text-black-bis">
                                 <h3 className="services-title has-text-black-bis">Usługi Web Developmentu</h3>
                                 <p>
-                                    Moją główną domeną jest backend, ale nie ma problemu, aby stworzyć cały front strony (design).
-                                    W przeszłości pisałem również w php np. motywy dla Wordpress.
+                                    My main domain is backend, but there is no problem to create the whole front of the page (design). In the past I wrote in php, for example, themes for Wordpress.
                                 </p>
                             </div>
                         </div>
@@ -34,10 +33,10 @@ const Services = ({data}) => {
                     <div className="columns">
                         <div className="column is-half">
                             <div className="content is-medium has-text-black-bis">
-                                <h3 className="services-title has-text-black-bis">Usługi SEO</h3>
+                                <h3 className="services-title has-text-black-bis">SEO services</h3>
                                 <p>
-                                    Pracuje przy optymalizacji stron, pozycjonowaniu SEO, content marketingu i prowadzeniu projektów.
-                                    Pracuje głównie z serwisami ecommerce oraz klasycznymi stronami firmowymi.
+                                    I work on website optimization, SEO, content marketing and project management.
+                                    I work mainly with e-commerce websites and classic company websites.
                                 </p>
                             </div>
                         </div>
@@ -47,12 +46,12 @@ const Services = ({data}) => {
                     <div className="columns">
                         <div className="column is-half">
                             <div className="content is-medium has-text-black-bis">
-                                <h3 className="services-title has-text-black-bis">Usługi SEM</h3>
+                                <h3 className="services-title has-text-black-bis">SEM services</h3>
                                 <p>
-                                    Zajmuje się planowaniem, ustawianiem oraz optymalizacją kampani Google Ads.
-                                    Tworzyłem kampanie Search, Display, YouTube, Remarketingowe.
+                                    I deal with planning, setting and optimization of Google Ads campaigns.
+                                    I created Search, Display, YouTube and Remarketing campaigns.
                                 </p>
-                                <p><b>Kontakt:</b> <a href="mailto:kontakt@pawelkot.com.pl">kontakt@pawelkot.com.pl</a></p>
+                                <p><b>Email:</b> <a href="mailto:kontakt@pawelkot.com.pl">kontakt@pawelkot.com.pl</a></p>
                             </div>
                         </div>
                         <div className="column is-half">

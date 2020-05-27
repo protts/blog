@@ -26,11 +26,11 @@ const Category = ({data}) => {
                     </div>
                     <div className="list-description">
                         <p>
-                            Wszystkie artykuły z kategorii <span dangerouslySetInnerHTML={{ __html: data.wordpressCategory.name }} />.
-                            Możesz przejść do wszystkich artykułów na stronie głównej lub do konkretnej kategorii.
-                            Jeśli masz do mnie pytanie lub ofertę to pisz śmiało, odpisuję każdemu.
+                            All articles in the <span dangerouslySetInnerHTML={{ __html: data.wordpressCategory.name }} /> category.
+                            You can go to all articles on the main page or to a specific category.
+                            If you have a question or an offer for me, write boldly. I reply to everyone.
                         </p>
-                        <Link to="/blog/"><BsArrowLeft /> Więcej artykułów</Link>
+                        <Link to="/blog/"><BsArrowLeft /> More articles</Link>
                     </div>
                 </div>
             </Main>
