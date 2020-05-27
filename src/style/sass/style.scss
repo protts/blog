@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import "~bulma/bulma.sass";
 
-$margin-footer: 100px;
+$margin-footer: 50px;
 $footer-padding: 2rem 1.5rem;
 $tabs-border-bottom-color: transparent;
 $tabs-border-bottom-style: none;
@@ -381,6 +381,13 @@ p {
             }
         }
     }
+}
+
+.disqus-container {
+    display: block;
+    max-width: 44rem;
+    margin: $margin-footer auto 0 auto;
+    padding: 0 10px;
 }
 
 .list-description {
