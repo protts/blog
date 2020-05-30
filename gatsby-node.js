@@ -12,6 +12,7 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             id
             slug
+            name
           }
         }
       }
@@ -20,6 +21,7 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             id
             slug
+            name
           }
         }
       }
