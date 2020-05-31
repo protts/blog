@@ -32,7 +32,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        baseUrl: `https://api.kolarzowa.pl/`,
+        baseUrl: `https://api.kolarzowa.pl`,
         protocol: `https`,
         hostingWPCOM: false,
         useACF: false,
