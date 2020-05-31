@@ -37,6 +37,8 @@ const Post = ({data, pageContext}) => {
         }
     }, [])
 
+    console.log(scroll)
+
     return(
         <>
             <SEO title={`${data.wordpressPost.title.replace("&#8211;", '-')} | pawelkot.com.pl`}
