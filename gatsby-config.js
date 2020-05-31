@@ -70,6 +70,8 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       },
     },
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-netlify-cache`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
