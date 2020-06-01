@@ -2,7 +2,6 @@ const path = require(`path`)
 const { slash } = require(`gatsby-core-utils`)
 const { paginate } = require('gatsby-awesome-pagination')
 
-
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
